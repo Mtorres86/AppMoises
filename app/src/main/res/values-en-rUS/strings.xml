@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lbl_titulo">Mobile Programming I</string>
+    <string name="btn_saludar">Greet</string>
+    <string name="edt_hint_nombre">enter your name</string>
+    <string name="mensaje_error_nombre">Please enter the name to display</string>
+    <string name="mensaje_bienvenida">Welcome, %1$s!.</string>
+    <string name="img_content_descripcion">a waving hand</string>
+</resources>

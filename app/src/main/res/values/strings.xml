@@ -1,8 +1,17 @@
 <resources>
-    <string name="app_name">AppMoises</string>
+    <string name="app_name" translatable="false">App Alumnos</string>
     <string name="lbl_titulo">Programación Movil I</string>
     <string name="btn_saludar">Saludar</string>
     <string name="edt_hint_nombre">Ingresa tu nombre</string>
     <string name="mensaje_error_nombre">Favor ingresa nombre a mostrar</string>
     <string name="mensaje_bienvenida">Bienvenido, %1$s!.</string>
+    <string name="title_activity_listado_datos" translatable="false">ListadoDatosActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+    <string name="img_content_descripcion">Una mano saludando</string>
+
+
 </resources>
