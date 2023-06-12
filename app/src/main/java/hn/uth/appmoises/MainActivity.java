@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             if(binding.edtNombre.getText().toString().isEmpty()){
                 //aqui le decimos que si no esta escrito el nombre lo ocultamos la imagen, recordemos que en la popiedad debe de estar inivisible
                 binding.imgSaludar.setVisibility(View.INVISIBLE);
+                binding.idalumnnos.setVisibility(View.INVISIBLE);
                 //este codigo salio del recurso de la pagina android
                 //a nuestro layour le ponemos un Id para acceder a al a treves de nuestro bindin
                 //creamos string en el area de string del mensjae del error. para que cuando no coloqyemos el nombre le nos muestre el error
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 String mensajeBienvenida = getString(R.string.mensaje_bienvenida, binding.edtNombre.getText());
                 binding.txtTitulo.setText(mensajeBienvenida);
                 binding.imgSaludar.setVisibility(View.VISIBLE);
+                binding.idalumnnos.setVisibility(View.VISIBLE);
 
             }
 

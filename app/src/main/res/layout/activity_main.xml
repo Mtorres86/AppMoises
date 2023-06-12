@@ -71,7 +71,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/baseline_back_hand_24"
         tools:visibility="visible"
-        android:contentDescription="@string/img_content_descripcion" /> <!--se agrega para las personas con discapacidad reducida, esta es una propiedad de accesibilas para los que no tienen vision-->
+        />
+
+    <ImageView
+        android:id="@+id/idalumnnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaludar"
+        app:srcCompat="@drawable/educacion"
+        tools:visibility="visible" /> <!--se agrega para las personas con discapacidad reducida, esta es una propiedad de accesibilas para los que no tienen vision-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
