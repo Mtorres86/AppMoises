@@ -8,82 +8,19 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/lbl_titulo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btnSaludar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="322dp"
         android:layout_marginEnd="16dp"
         android:text="@string/btn_saludar"
-        app:layout_constraintBottom_toTopOf="@+id/edtNombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.046" />
+        tools:layout_editor_absoluteY="326dp" />
 
-    <TextView
-        android:id="@+id/txtTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/imgSaludar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/edtNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
-        android:ems="10"
-        android:hint="@string/edt_hint_nombre"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <ImageView
-        android:id="@+id/imgSaludar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/baseline_back_hand_24"
-        tools:visibility="visible"
-        />
-
-    <ImageView
-        android:id="@+id/idalumnnos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSaludar"
-        app:srcCompat="@drawable/educacion"
-        tools:visibility="visible" /> <!--se agrega para las personas con discapacidad reducida, esta es una propiedad de accesibilas para los que no tienen vision-->
+    <!--se agrega para las personas con discapacidad reducida, esta es una propiedad de accesibilas para los que no tienen vision-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package hn.uth.appmoises;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -39,41 +40,41 @@ public class DatosActivity extends AppCompatActivity {
         setSupportActionBar(binding.toolbar);
 
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAnchorView(R.id.fab)
-                        .setAction("Action", null).show();
-            }
+        binding.fab.setOnClickListener(view -> {
+            //aqui creamos una instancia que le decimos que vamoa llamar desde este activyti datos, el activity  el main
+            Intent intento = new Intent(this.getApplicationContext(),MainActivity.class);
+            startActivities(intento);
         });
 
         List<Alumno> listadoAlumnos=new ArrayList<>();
-        listadoAlumnos.add(new Alumno("Jose trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Manuel trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Maria trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Ricardo trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Moises trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Mauricio trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Jose trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Pedro trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Carlos trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Raquel trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Pipe trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Manuel trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Noe trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Salvador trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("J trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Pepe trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Jesus trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Estrella trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Joshe trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Arturo trochez","202020202020"));
-        listadoAlumnos.add(new Alumno("Benito trochez","202020202020"));
+        listadoAlumnos.add(new Alumno("Jose trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Manuel trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Maria trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Ricardo trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Moises trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Mauricio trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Jose trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Pedro trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Carlos trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Raquel trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Pipe trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Manuel trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Noe trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Salvador trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("J trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Pepe trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Jesus trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Estrella trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Joshe trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Arturo trochez","202020202020", "pedro@gmail.com","M","SPS"));
+        listadoAlumnos.add(new Alumno("Benito trochez","202020202020", "pedro@gmail.com","M","SPS"));
 
         adapter = new AlumnosAdapter(listadoAlumnos);
        //llamamos al metodo para poder ejecutarlo en el main.
         setupRecycleView();
+    }
+
+    private void startActivities(Intent intento) {
     }
 
     //Creamos un metodo para configurar nuestro recycleview
